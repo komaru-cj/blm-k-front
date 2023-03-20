@@ -4,7 +4,7 @@
     <div class="down">
         <div class="bigdown" v-for="(item, i) in allorder" v-if="i%6==0">
           <div class="middledown" v-for="(item, j) in row(allorder,i)" :key="i,j" @click="selectorder(i,j)">
-            <span>{{ item.orderId}}</span>
+            <span class="middledowntext">订单号  {{ item.orderId}}</span>
             <div class="downtopic" v-for="(item, i) in item.orderDetailList">
               <div >
                 <span>{{ item.dishName }}*{{item.number}}</span>
@@ -114,9 +114,16 @@ export default {
   justify-content: flex-start;
   align-items: baseline;
   height: 270px;
-  background-color: #ffe0d1;
   margin-left: 50px;
   margin-top: 30px;
+  border-radius: 20px;
+  background: rgb(255, 241, 234);
+  box-shadow: 0px 2px 4px 0px rgba(227, 70, 70, 0.6);
+  color: #8c0308;
+  font-size: 18px;
+}
+.middledowntext{
+  margin-left: 55px;
 }
 .downtopic{
   font-size: 15px;
