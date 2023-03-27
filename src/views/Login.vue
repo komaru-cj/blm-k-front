@@ -126,18 +126,19 @@ export default {
   background-color:rgba(255, 255, 255, 1);
   box-sizing:border-box;
   border-style:solid;
-  border-color:rgba(121, 121, 121, 1);
+  border-color: rgb(227, 225, 225);
   border-radius:15px;
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  color:#6B6B6B;
+  color: #000000;
   text-align:left;
   font-family:'华文细黑';
   font-weight:400;
   font-style:normal;
   font-size:18px;
   outline: none;
+  padding-left: 15px;
 }
 .inputBox.change::-webkit-input-placeholder{
   color: #e30000;

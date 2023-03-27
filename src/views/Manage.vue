@@ -63,7 +63,7 @@ export default {
         url: '/orderinfo/updatestatus',
         method: 'post',
         params: {
-          orderId: this.allorder[i+j].orderId,
+          orderID: this.allorder[i+j].orderId,
           status: 2
         }
       }).then(res => {
